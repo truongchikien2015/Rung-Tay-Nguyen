@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+
+<html class="light" lang="vi"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Gia Lai Vigilant - Bảo Vệ Trái Tim Xanh</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&amp;family=Inter:wght@400;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind Configuration -->
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "primary-fixed-dim": "#a5d0b9",
+                    "surface-dim": "#d9dadb",
+                    "primary-container": "#1b4332",
+                    "tertiary-container": "#503700",
+                    "on-tertiary": "#ffffff",
+                    "surface-container": "#edeeef",
+                    "secondary": "#ad302f",
+                    "on-secondary": "#ffffff",
+                    "surface-container-highest": "#e1e3e4",
+                    "on-secondary-fixed": "#410004",
+                    "on-background": "#191c1d",
+                    "surface-container-high": "#e7e8e9",
+                    "on-primary-container": "#86af99",
+                    "on-primary-fixed": "#002114",
+                    "on-tertiary-fixed": "#271900",
+                    "on-tertiary-fixed-variant": "#5e4100",
+                    "tertiary-fixed-dim": "#ffba27",
+                    "surface-container-low": "#f3f4f5",
+                    "outline": "#717973",
+                    "error": "#ba1a1a",
+                    "secondary-fixed": "#ffdad7",
+                    "secondary-fixed-dim": "#ffb3ad",
+                    "on-secondary-container": "#6d000b",
+                    "inverse-on-surface": "#f0f1f2",
+                    "tertiary-fixed": "#ffdea9",
+                    "background": "#f8f9fa",
+                    "surface": "#f8f9fa",
+                    "tertiary": "#342300",
+                    "inverse-primary": "#a5d0b9",
+                    "on-secondary-fixed-variant": "#8c171b",
+                    "surface-variant": "#e1e3e4",
+                    "secondary-container": "#ff6c65",
+                    "inverse-surface": "#2e3132",
+                    "surface-container-lowest": "#ffffff",
+                    "on-surface-variant": "#414844",
+                    "error-container": "#ffdad6",
+                    "on-surface": "#191c1d",
+                    "on-error": "#ffffff",
+                    "primary-fixed": "#c1ecd4",
+                    "outline-variant": "#c1c8c2",
+                    "on-primary": "#ffffff",
+                    "primary": "#012d1d",
+                    "on-primary-fixed-variant": "#274e3d",
+                    "on-error-container": "#93000a",
+                    "surface-tint": "#3f6653",
+                    "on-tertiary-container": "#d89b00",
+                    "surface-bright": "#f8f9fa"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "section-gap": "120px",
+                    "base": "8px",
+                    "gutter": "24px",
+                    "margin-desktop": "64px",
+                    "margin-mobile": "20px",
+                    "container-max": "1280px"
+            },
+            "fontFamily": {
+                    "headline-sm": ["Playfair Display"],
+                    "label-caps": ["Inter"],
+                    "display-lg": ["Playfair Display"],
+                    "headline-md": ["Playfair Display"],
+                    "body-md": ["Inter"],
+                    "display-lg-mobile": ["Playfair Display"],
+                    "body-lg": ["Inter"]
+            },
+            "fontSize": {
+                    "headline-sm": ["24px", {"lineHeight": "1.4", "fontWeight": "600"}],
+                    "label-caps": ["12px", {"lineHeight": "1.2", "letterSpacing": "0.1em", "fontWeight": "700"}],
+                    "display-lg": ["56px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                    "headline-md": ["32px", {"lineHeight": "1.3", "fontWeight": "600"}],
+                    "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                    "display-lg-mobile": ["40px", {"lineHeight": "1.2", "fontWeight": "700"}],
+                    "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .hero-scrim {
+            background: linear-gradient(to bottom, rgba(1, 45, 29, 0.7) 0%, rgba(1, 45, 29, 0.3) 50%, rgba(1, 45, 29, 0.8) 100%);
+        }
+        .texture-overlay {
+            background-image: url("https://www.transparenttextures.com/patterns/p6.png");
+            opacity: 0.05;
+        }
+    </style>
+</head>
+<body class="bg-background text-on-surface selection:bg-primary-fixed-dim selection:text-on-primary-fixed">
+<!-- Top Navigation Bar -->
+<nav class="fixed top-0 w-full z-50 bg-surface/80 backdrop-blur-md shadow-sm shadow-primary/10">
+<div class="flex justify-between items-center max-w-container-max mx-auto px-margin-desktop py-4">
+<div class="font-headline-sm text-headline-sm font-bold text-primary">Gia Lai Vigilant</div>
+<div class="hidden md:flex gap-8 items-center">
+<a class="font-label-caps text-label-caps text-secondary font-bold border-b-2 border-secondary py-1" href="#">Ecosystem</a>
+<a class="font-label-caps text-label-caps text-on-surface-variant hover:text-primary transition-colors py-1" href="#">Projects</a>
+<a class="font-label-caps text-label-caps text-on-surface-variant hover:text-primary transition-colors py-1" href="#">Take Action</a>
+</div>
+<button class="bg-tertiary-fixed-dim hover:bg-tertiary-fixed text-on-tertiary-fixed font-label-caps text-label-caps px-6 py-3 rounded-lg transition-all active:scale-95">
+                Tham Gia Ngay
+            </button>
+</div>
+</nav>
+<!-- Hero Section -->
+<header class="relative min-h-screen flex items-center pt-20 overflow-hidden">
+<div class="absolute inset-0 z-0">
+<img alt="Gia Lai Forest" class="w-full h-full object-cover scale-105" data-alt="A cinematic, wide-angle shot of a mist-shrouded ancient pine forest in the Gia Lai Central Highlands. Sunlight filters through the dense canopy, creating ethereal rays that illuminate the vibrant green moss and ferns on the forest floor. The atmosphere is quiet, majestic, and vigilant, reflecting a modern corporate yet nature-focused aesthetic with deep greens and earthy tones." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBEHLC4PbyR2GTtjuL4Qt4geYI4vlTT682ySnb28_4bXfqPVxdNdMFv5N95niOKNQEyFY2V5LpoIUchnEwqKSz8DwCIqNzr2QUwyBZEZ62ZhjQDsfbFkP9SmnRCPW-1QAObJg6sbsQNDp6N3zslZkali9ggUntZuJM8oGbMLljts0OerJVXYSDSdnX5xySsepAorqKmtMd3PWZChzRoniOwaY5sXg7Y18ZtskbIjtuMstfZvBVQRH1y6tRyx5Zaxt8W7XSmvOwPC_k"/>
+<div class="absolute inset-0 hero-scrim"></div>
+</div>
+<div class="relative z-10 max-w-container-max mx-auto px-margin-desktop w-full">
+<div class="max-w-3xl">
+<span class="font-label-caps text-label-caps text-tertiary-fixed-dim mb-4 block">DI SẢN THIÊN NHIÊN HÙNG VĨ</span>
+<h1 class="font-display-lg text-display-lg text-white mb-8">Gia Lai - Trái Tim Xanh của Tây Nguyên</h1>
+<p class="font-body-lg text-body-lg text-primary-fixed-dim mb-10 leading-relaxed max-w-xl">
+                    Nơi những cánh rừng thông cổ thụ và thác nước hùng vĩ kể câu chuyện về sự sống bền bỉ. Chúng ta là những người gác cổng cho tương lai xanh của đại ngàn.
+                </p>
+<div class="flex flex-col sm:flex-row gap-4">
+<button class="bg-tertiary-fixed-dim hover:bg-tertiary-fixed text-on-tertiary-fixed font-label-caps text-label-caps px-8 py-4 rounded-lg flex items-center justify-center gap-2 transition-all">
+                        Hành Động Ngay
+                        <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</button>
+<button class="border-2 border-primary-fixed-dim text-primary-fixed-dim hover:bg-primary-fixed-dim/10 font-label-caps text-label-caps px-8 py-4 rounded-lg transition-all">
+                        Tìm Hiểu Thêm
+                    </button>
+</div>
+</div>
+</div>
+</header>
+<!-- Importance Section: Bento Layout -->
+<section class="py-section-gap relative">
+<div class="max-w-container-max mx-auto px-margin-desktop">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-gutter items-center">
+<div class="md:col-span-5 space-y-6">
+<span class="font-label-caps text-label-caps text-secondary">TẦM QUAN TRỌNG CỐT LÕI</span>
+<h2 class="font-headline-md text-headline-md text-primary">Lá phổi của khu vực, nguồn sống của muôn loài</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">
+                        Rừng Gia Lai không chỉ là một không gian xanh; đó là hệ thống điều tiết khí hậu tinh vi và là mái nhà của những loài động thực vật quý hiếm bậc nhất Việt Nam. Mỗi gốc thông cổ thụ là một kho lưu trữ carbon khổng lồ, giữ cho bầu không khí trong lành và cân bằng hệ sinh thái.
+                    </p>
+<div class="pt-4 border-l-4 border-secondary pl-6 italic font-body-md text-on-surface-variant">
+                        "Nếu rừng mất đi, linh hồn của Tây Nguyên cũng sẽ tan biến."
+                    </div>
+</div>
+<div class="md:col-span-7 grid grid-cols-2 gap-4">
+<div class="rounded-xl overflow-hidden shadow-lg shadow-primary/5 aspect-[3/4]">
+<img alt="Forest Canopy" class="w-full h-full object-cover" data-alt="An upward-looking perspective shot of towering ancient trees reaching toward the sky in a dense jungle. The lighting is soft and ambient, capturing the misty atmosphere of the Central Highlands. The composition highlights the organic curves of the branches against a bright, hazy sky, emphasizing the authoritative and ancestral spirit of the forest ecosystem." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBLn4zp3rclSNtv3BJ7jEOiZleU2SPaBsqtKavcq1WAGqNxqYhGfo_Oia5N7ztFMTWwgvLYupFTtEUPionkgVpyzTMxP7Xzy3zGVRHtWqWLuF7GEqGtFd64ilP4F1uHlrqEwURRnAk4c6M9dwh4REmk1bWmgzk8IVQXytokzzZ51CqjTO8-w10gzHLEX_3UGJduPBGpuqj7bolwj8vAcX_xwb9l_1GG6R6ZycYDkZdXL-ppuX7lSVQcnsxtbqaRAKKoWYSW6uGW8rI"/>
+</div>
+<div class="rounded-xl overflow-hidden shadow-lg shadow-primary/5 aspect-[3/4] mt-8">
+<img alt="Mountain Waterfall" class="w-full h-full object-cover" data-alt="A breathtaking, powerful waterfall cascading down jagged basalt red-brown rocks in the heart of Gia Lai. The surrounding greenery is lush and deep jungle green. The water creates a fine mist, reflecting a tranquil yet powerful mood. The visual style is high-contrast and professional, suitable for an environmental conservation landing page." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBr33kJ6mjNba310VAvDnwwIa1QsZxVeAHDyYRQcPL_3dqEHQkb5vDiFxwJbP853yTVtjvZnqCZJFRi-g3hzSZSiGyTnya6P179-XJcrgH6V4jmRr3zEaEteTMk_Em0LUgqhtaOWWhGMqqA4k-kU9Hsvt-aCx3hpL0NEGECUpgFt24zYmZCnKXa0kpXRz3GM-rAQ8EhYs_aokiwnNPyG0hkfJecEZmkeKFsBpSCSOASgBT6Jwrynnq59_MXhHa9vJ2Xpc5ww8eZ-WI"/>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Statistics Section -->
+<section class="bg-primary-container py-section-gap relative overflow-hidden">
+<div class="texture-overlay absolute inset-0"></div>
+<div class="max-w-container-max mx-auto px-margin-desktop relative z-10">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter text-center">
+<div class="p-8 group hover:bg-primary/20 rounded-xl transition-all duration-500">
+<span class="material-symbols-outlined text-tertiary-fixed-dim text-4xl mb-4 block" data-weight="fill">forest</span>
+<div class="font-display-lg text-display-lg text-white mb-2">560K</div>
+<p class="font-label-caps text-label-caps text-primary-fixed-dim">Hecta diện tích che phủ</p>
+<p class="font-body-md text-body-md text-on-primary-container mt-4">Tỷ lệ che phủ rừng lớn nhất khu vực Tây Nguyên.</p>
+</div>
+<div class="p-8 group hover:bg-primary/20 rounded-xl transition-all duration-500">
+<span class="material-symbols-outlined text-tertiary-fixed-dim text-4xl mb-4 block" data-weight="fill">diversity_3</span>
+<div class="font-display-lg text-display-lg text-white mb-2">1,200+</div>
+<p class="font-label-caps text-label-caps text-primary-fixed-dim">Loài thực vật đặc hữu</p>
+<p class="font-body-md text-body-md text-on-primary-container mt-4">Nơi bảo tồn nguồn gen quý của đại ngàn Đông Nam Á.</p>
+</div>
+<div class="p-8 group hover:bg-primary/20 rounded-xl transition-all duration-500">
+<span class="material-symbols-outlined text-tertiary-fixed-dim text-4xl mb-4 block" data-weight="fill">volunteer_activism</span>
+<div class="font-display-lg text-display-lg text-white mb-2">24/7</div>
+<p class="font-label-caps text-label-caps text-primary-fixed-dim">Vigilant Protection</p>
+<p class="font-body-md text-body-md text-on-primary-container mt-4">Hệ thống giám sát rừng thông minh chống phá rừng.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Features / Interactive Cards -->
+<section class="py-section-gap">
+<div class="max-w-container-max mx-auto px-margin-desktop">
+<div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-4">
+<div class="max-w-xl">
+<span class="font-label-caps text-label-caps text-secondary">HÀNH ĐỘNG CÙNG CHÚNG TÔI</span>
+<h2 class="font-headline-md text-headline-md text-primary mt-2">Dự án đang triển khai</h2>
+</div>
+<a class="text-primary font-label-caps text-label-caps flex items-center gap-2 group" href="#">
+                    XEM TẤT CẢ DỰ ÁN
+                    <span class="material-symbols-outlined transition-transform group-hover:translate-x-1">arrow_right_alt</span>
+</a>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
+<!-- Card 1 -->
+<div class="bg-surface-container-low rounded-lg overflow-hidden border-l-4 border-secondary shadow-sm">
+<div class="aspect-[3/4] relative">
+<img alt="Reforestation" class="w-full h-full object-cover" data-alt="A close-up shot of a young tree seedling being planted in the rich, basalt red soil of Gia Lai. The hands of a volunteer are visible, gently firming the earth around the plant. The lighting is warm and sun-kissed, conveying hope and growth. The overall aesthetic is tactile and grounded, emphasizing the connection between humans and the highland environment." src="https://lh3.googleusercontent.com/aida-public/AB6AXuB8-2SemjPIXg1RKxm5voRfrYC5gVkESfS9YfyYCMS8tUfQxMA2qbXswu57AuLPNDAZ-FmKXDulvm3rQ-_vZfsjdTnZZi_NaPyR2HkQHzZLZhtIG0tdcHBAWMkjm_thJVq3ZWYCIy2tjG868vmo-UnRTmdqxwsWUWcc4yv6ggoS8AiwC0E23BnIH-rxM1SxlvHRzcpN96vncEENkFKGhQk7ncCOmLwh2qNkyA5w_5DvxQVVk5k8FPwlo6Y3pdt900lnvKQxZSfCCj4"/>
+</div>
+<div class="p-8">
+<h3 class="font-headline-sm text-headline-sm text-primary mb-3">Tái tạo rừng thông</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6">Trồng mới 10,000 cây thông ba lá tại các khu vực đất trống đồi trọc.</p>
+<div class="w-full bg-primary/10 h-3 rounded-full overflow-hidden">
+<div class="bg-tertiary-fixed-dim h-full w-[65%]"></div>
+</div>
+<div class="flex justify-between mt-2 font-label-caps text-label-caps text-secondary">
+<span>6,500 CÂY</span>
+<span>MỤC TIÊU: 10,000</span>
+</div>
+</div>
+</div>
+<!-- Card 2 -->
+<div class="bg-surface-container-low rounded-lg overflow-hidden border-l-4 border-secondary shadow-sm">
+<div class="aspect-[3/4] relative">
+<img alt="Wildlife Monitoring" class="w-full h-full object-cover" data-alt="An atmospheric landscape of a vast mountainous valley in the Central Highlands during sunset. The sky is a palette of warm oranges and deep purples, reflecting off a calm river winding through the deep green valley. The image captures the serene yet majestic spirit of the ancestral lands, with high-quality photography highlighting the scale of the wilderness." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAlI6qa8onN0WxJTV4EbcYVOgyOwf17BjRPBlWjfS6iCZib1HEYPllWD4XEzUHyfCBMOigtN2yfnQzPJ1wsPVH6Ccx4ZySoG3ah8q0oIQW8MHErLqk5_OdQ2rBPXRGMeqBHKPzmgFRpygC9HT4OQJO7hH7vy2Xfze4GBua9tMikeSA-FH8vMXrPTDCC7botecnXTy2fLPr7dmEd3UrETQNKISHxcREfTgdaMNvKv0YLbvtcuTwWSRMpvQlqXbEJOiWVZxYlOjpbAYw"/>
+</div>
+<div class="p-8">
+<h3 class="font-headline-sm text-headline-sm text-primary mb-3">Bảo tồn đa dạng</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6">Thiết lập hệ thống camera giám sát động vật hoang dã tại vườn quốc gia.</p>
+<div class="w-full bg-primary/10 h-3 rounded-full overflow-hidden">
+<div class="bg-tertiary-fixed-dim h-full w-[42%]"></div>
+</div>
+<div class="flex justify-between mt-2 font-label-caps text-label-caps text-secondary">
+<span>42 TRẠM</span>
+<span>MỤC TIÊU: 100</span>
+</div>
+</div>
+</div>
+<!-- Card 3 -->
+<div class="bg-surface-container-low rounded-lg overflow-hidden border-l-4 border-secondary shadow-sm">
+<div class="aspect-[3/4] relative">
+<img alt="Community Education" class="w-full h-full object-cover" data-alt="Soft morning sunlight streaming through the leaves of a dense forest, creating patterns of light and shadow on the earthy brown floor. The scene is quiet and peaceful, embodying the 'Timeless Protection' narrative. The color palette features rich Forest Greens and Basalt Red-Browns, creating a grounded and authoritative visual experience for an environmental project." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCazceoneK-yKqhfWXK0ERGMG6ueoi5MMnPZm5EckQhvMl75BGcUabDLllDE2awZjC_4OXL7dQbp4dRA0uREAKyqQYGVpevDpolsJzTRnJVxJMrNIyx6ecFkAuWjuurV0B9vNmT4Su33sWipfJie8Gv4PbRJBLCXyB7PDzTI2coYng9HmEfFtIHvmE7eg5MbPLi8AY1jMaixvgT7Bae3eD3E_8IxgIp3XJZ8dFxyVEEE9ONsRQb-urdUTi0MVC73xrpMYQy_iI4rCU"/>
+</div>
+<div class="p-8">
+<h3 class="font-headline-sm text-headline-sm text-primary mb-3">Giáo dục cộng đồng</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6">Nâng cao nhận thức bảo vệ rừng cho thế hệ trẻ vùng cao.</p>
+<div class="w-full bg-primary/10 h-3 rounded-full overflow-hidden">
+<div class="bg-tertiary-fixed-dim h-full w-[88%]"></div>
+</div>
+<div class="flex justify-between mt-2 font-label-caps text-label-caps text-secondary">
+<span>12 TRƯỜNG</span>
+<span>MỤC TIÊU: 15</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Call to Action Section -->
+<section class="py-section-gap">
+<div class="max-w-container-max mx-auto px-margin-desktop">
+<div class="bg-surface-container-high rounded-3xl p-12 md:p-24 relative overflow-hidden text-center">
+<div class="absolute top-0 right-0 w-64 h-64 bg-primary/5 rounded-full -translate-y-1/2 translate-x-1/2"></div>
+<div class="absolute bottom-0 left-0 w-96 h-96 bg-secondary/5 rounded-full translate-y-1/2 -translate-x-1/2"></div>
+<div class="relative z-10 max-w-2xl mx-auto">
+<h2 class="font-headline-md text-headline-md text-primary mb-6">Hãy cùng chúng tôi giữ màu xanh cho mai sau</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-10">
+                        Mỗi đóng góp của bạn, dù là nhỏ nhất, đều góp phần xây dựng một rào chắn vững chắc bảo vệ lá phổi xanh của Việt Nam.
+                    </p>
+<div class="flex flex-col sm:flex-row gap-6 justify-center">
+<button class="bg-secondary hover:bg-secondary-container text-white font-label-caps text-label-caps px-10 py-5 rounded-lg shadow-lg shadow-secondary/20 transition-all">
+                            QUYÊN GÓP BẢO TỒN
+                        </button>
+<button class="bg-primary hover:bg-primary-container text-white font-label-caps text-label-caps px-10 py-5 rounded-lg shadow-lg shadow-primary/20 transition-all">
+                            ĐĂNG KÝ TÌNH NGUYỆN
+                        </button>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="bg-primary py-section-gap">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-gutter max-w-container-max mx-auto px-margin-desktop">
+<div class="md:col-span-4">
+<div class="font-headline-sm text-headline-sm text-on-primary mb-6">Gia Lai Protection</div>
+<p class="font-body-md text-body-md text-primary-fixed-dim/80 mb-8 max-w-xs">
+                    Tổ chức phi lợi nhuận cam kết bảo tồn sự đa dạng sinh học và di sản văn hóa của vùng cao nguyên Gia Lai qua những hành động thiết thực và công nghệ hiện đại.
+                </p>
+<div class="flex gap-4">
+<a class="w-10 h-10 rounded-full border border-primary-fixed-dim/30 flex items-center justify-center text-on-primary hover:bg-primary-fixed-dim/10 transition-colors" href="#">
+<span class="material-symbols-outlined text-lg">public</span>
+</a>
+<a class="w-10 h-10 rounded-full border border-primary-fixed-dim/30 flex items-center justify-center text-on-primary hover:bg-primary-fixed-dim/10 transition-colors" href="#">
+<span class="material-symbols-outlined text-lg">mail</span>
+</a>
+</div>
+</div>
+<div class="md:col-span-2">
+<h4 class="font-label-caps text-label-caps text-on-primary mb-6">KHÁM PHÁ</h4>
+<ul class="space-y-4">
+<li><a class="font-label-caps text-label-caps text-primary-fixed-dim/80 hover:text-primary-fixed transition-all hover:underline decoration-secondary-container" href="#">Về chúng tôi</a></li>
+<li><a class="font-label-caps text-label-caps text-primary-fixed-dim/80 hover:text-primary-fixed transition-all hover:underline decoration-secondary-container" href="#">Tin tức bảo tồn</a></li>
+<li><a class="font-label-caps text-label-caps text-primary-fixed-dim/80 hover:text-primary-fixed transition-all hover:underline decoration-secondary-container" href="#">Báo cáo năm</a></li>
+</ul>
+</div>
+<div class="md:col-span-2">
+<h4 class="font-label-caps text-label-caps text-on-primary mb-6">HỖ TRỢ</h4>
+<ul class="space-y-4">
+<li><a class="font-label-caps text-label-caps text-primary-fixed-dim/80 hover:text-primary-fixed transition-all hover:underline decoration-secondary-container" href="#">Volunteer Portal</a></li>
+<li><a class="font-label-caps text-label-caps text-primary-fixed-dim/80 hover:text-primary-fixed transition-all hover:underline decoration-secondary-container" href="#">Environmental Data</a></li>
+<li><a class="font-label-caps text-label-caps text-primary-fixed-dim/80 hover:text-primary-fixed transition-all hover:underline decoration-secondary-container" href="#">Contact Us</a></li>
+</ul>
+</div>
+<div class="md:col-span-4">
+<h4 class="font-label-caps text-label-caps text-on-primary mb-6">NEWSLETTER</h4>
+<p class="font-body-md text-body-md text-primary-fixed-dim/80 mb-6">Nhận thông tin cập nhật về tình trạng rừng và các dự án mới nhất.</p>
+<div class="flex gap-2">
+<input class="bg-white/10 border-b border-secondary-fixed-dim text-white p-3 flex-grow focus:outline-none focus:border-tertiary-fixed-dim transition-colors placeholder:text-primary-fixed-dim/50" placeholder="Email của bạn" type="email"/>
+<button class="bg-tertiary-fixed-dim text-on-tertiary-fixed px-6 py-3 font-label-caps text-label-caps rounded-sm">GỬI</button>
+</div>
+</div>
+<div class="md:col-span-12 pt-12 border-t border-primary-fixed-dim/10 mt-12 flex flex-col md:flex-row justify-between items-center gap-4">
+<p class="font-body-md text-body-md text-primary-fixed-dim/60">
+                    © 2024 Gia Lai Protection. Timeless Protection for the Central Highlands.
+                </p>
+<div class="flex gap-8">
+<a class="font-label-caps text-label-caps text-primary-fixed-dim/60 hover:text-on-primary transition-all" href="#">Privacy Policy</a>
+<a class="font-label-caps text-label-caps text-primary-fixed-dim/60 hover:text-on-primary transition-all" href="#">Terms of Service</a>
+</div>
+</div>
+</div>
+</footer>
+<script>
+        // Micro-interaction for navbar transparency shift
+        window.addEventListener('scroll', () => {
+            const nav = document.querySelector('nav');
+            if (window.scrollY > 50) {
+                nav.classList.add('shadow-md');
+                nav.classList.remove('shadow-sm');
+            } else {
+                nav.classList.add('shadow-sm');
+                nav.classList.remove('shadow-md');
+            }
+        });
+
+        // Parallax effect for hero image
+        window.addEventListener('scroll', () => {
+            const heroImg = document.querySelector('header img');
+            const scrollValue = window.scrollY;
+            heroImg.style.transform = `translateY(${scrollValue * 0.3}px) scale(1.05)`;
+        });
+    </script>
+</body></html>
